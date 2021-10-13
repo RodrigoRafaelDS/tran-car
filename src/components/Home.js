@@ -10,7 +10,7 @@ const HomePage=()=>{
   return(
 <div
           className="site-layout-background"
-          style={{ padding: 24, height: "800px" }}
+          style={{ padding: 24, height: "600px" }}
         >
           <div className="home">
           <LogoPage></LogoPage>
@@ -28,7 +28,7 @@ const HomePage=()=>{
 }
 const Sobre=()=>{
   return(
-      <div className="site-layout-background" style={{ padding: 24, height: "800px" }}>
+      <div className="site-layout-background" style={{ padding: 24, height: "600px" }}>
            <LogoPage></LogoPage>
             <h1> A <strong>TranCar</strong> oferece um sistema capaz de monitorar seu automóvel
             remotamente listando dados importantes para manter o cuidado e segurança do seu veículo.
@@ -46,7 +46,7 @@ const LogoPage=()=>{
   )
 }
 function Home() {
-  const [selectPage, setselectPage] = useState(false);
+  const [selectPage, setselectPage] = useState(true);
   return (
     <Layout>
       <Header style={{ position: "fixed", zIndex: 1, width: "100%" }}>
@@ -61,10 +61,10 @@ function Home() {
       </Header>
       <Content
         className="site-layout"
-        style={{ padding: "0 50px", marginTop: 64 }}
+        style={{ padding: "0 250px", marginTop: 64}}
       >
         <Breadcrumb style={{ margin: "16px 0" }}>
-          <Breadcrumb.Item>Home</Breadcrumb.Item>
+          <Breadcrumb.Item>{selectPage ? 'Home' : 'Sobre'}</Breadcrumb.Item>
         </Breadcrumb>
         {selectPage ? (<HomePage></HomePage>) : (<Sobre></Sobre>)}
         
