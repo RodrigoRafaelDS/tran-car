@@ -2,7 +2,7 @@ import { Layout, Menu, Breadcrumb } from "antd";
 import "./home.css";
 import { CarOutlined,DeleteRowOutlined, FireOutlined, 
   NotificationOutlined,UnlockOutlined,ThunderboltOutlined,
-  EnvironmentOutlined, LockOutlined, BulbOutlined } from "@ant-design/icons";
+  EnvironmentOutlined, LockOutlined, LinkedinOutlined, BulbOutlined } from "@ant-design/icons";
 
 const { Header, Content, Footer } = Layout;
 function Home() {
@@ -12,7 +12,8 @@ function Home() {
         <div className="logo" />
         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["1"]}>
           <Menu.Item key="1">Home</Menu.Item>
-          <Menu.Item disabled key="2">
+          <Menu.Item disabled key="2">Sobre</Menu.Item>
+          <Menu.Item disabled key="3">
             Monitoramento (Em breve...)
           </Menu.Item>
         </Menu>
@@ -44,9 +45,13 @@ function Home() {
         </div>
       </Content>
       <Footer style={{ textAlign: "center" }}>
-        <strong> Autores: Rodrigo - Bruno | IFMG - Betim </strong>
-        <p> Beta 0.1</p>
+     <h3>
+        <strong> Autores: Rodrigo Rafael <a target="_blank" href='https://www.linkedin.com/in/rodrigo-rafael/'> <LinkedinOutlined/></a>- 
+        Bruno Alves <a target="_blank" href='https://www.linkedin.com/in/bruno-alves-3b8b82205/'> <LinkedinOutlined/></a></strong>
+        <p>  IFMG - Betim </p>
+       </h3>  
       </Footer>
+        <p>Beta</p>
     </Layout>
   );
 }
