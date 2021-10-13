@@ -61,7 +61,7 @@ function Home() {
       </Header>
       <Content
         className="site-layout"
-        style={{ padding: "0 150px", marginTop: 64}}
+        style={{ padding: "0 50px", marginTop: 64}}
       >
         <Breadcrumb style={{ margin: "16px 0" }}>
           <Breadcrumb.Item>{selectPage ? 'Home' : 'Sobre'}</Breadcrumb.Item>
