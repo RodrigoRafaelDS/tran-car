@@ -39,7 +39,7 @@ const Sobre=()=>{
 }
 const LogoPage=()=>{
   return(
-    <h1 className="text">
+    <h1 className="logo">
     <UnlockOutlined /> TranCar <CarOutlined />
   </h1>
      

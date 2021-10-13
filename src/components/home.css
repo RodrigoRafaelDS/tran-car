@@ -14,8 +14,12 @@
   position: absolute;
   bottom: 0;
 }
-  .text{
-    margin-left: 40%;
+  .logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     font-size: 48px;
+    column-gap: 12px;
   }
+  
  
