@@ -8,7 +8,7 @@ function AAP() {
     <h2>IFMG</h2>
     <h3>
     "O Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais é uma instituição 
-    brasileira que oferece educação básica, profissional e superior.""
+    brasileira que oferece educação básica, profissional e superior."
     </h3>
     <h2>AAP</h2>
     <h3>
