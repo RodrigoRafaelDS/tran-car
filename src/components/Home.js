@@ -46,8 +46,8 @@ function Home() {
       </Content>
       <Footer style={{ textAlign: "center" }}>
      <h3>
-        <strong> Autores: Rodrigo Rafael <a target="_blank" href='https://www.linkedin.com/in/rodrigo-rafael/'> <LinkedinOutlined/></a>- 
-        Bruno Alves <a target="_blank" href='https://www.linkedin.com/in/bruno-alves-3b8b82205/'> <LinkedinOutlined/></a></strong>
+        <strong> Autores: Rodrigo Rafael <a rel="noreferrer" target="_blank" href='https://www.linkedin.com/in/rodrigo-rafael/'> <LinkedinOutlined/></a>- 
+        Bruno Alves <a rel="noreferrer" target="_blank" href='https://www.linkedin.com/in/bruno-alves-3b8b82205/'> <LinkedinOutlined/></a></strong>
         <p>  IFMG - Betim </p>
        </h3>  
       </Footer>
