@@ -4,7 +4,7 @@ import "./home.css";
 import { CarOutlined,DeleteRowOutlined, FireOutlined, 
   NotificationOutlined,UnlockOutlined,ThunderboltOutlined,
   EnvironmentOutlined, LockOutlined, LinkedinOutlined, BulbOutlined } from "@ant-design/icons";
-
+import APP from './pages/AAP'
 const { Header, Content, Footer } = Layout;
 const HomePage=()=>{
   return(
@@ -46,15 +46,18 @@ const LogoPage=()=>{
   )
 }
 function Home() {
-  const [selectPage, setselectPage] = useState(true);
+  const [selectPage, setselectPage] = useState(0);
+  const RenderSelect=[<HomePage/>,<Sobre/>, <APP/>];
+  const RenderSelectDescription=['Home','Sobre','IFMG | AAP',''];
   return (
     <Layout>
       <Header style={{ position: "fixed", zIndex: 1, width: "100%" }}>
         <div className="logo" />
         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["1"]}>
-          <Menu.Item  onClick={()=>setselectPage(true)} key="1">Home</Menu.Item>
-          <Menu.Item onClick={()=>{setselectPage(false); console.log('test')}} key="2">Sobre</Menu.Item>
-          <Menu.Item disabled key="3">
+          <Menu.Item  onClick={()=>setselectPage(0)} key="1">{RenderSelectDescription[0]}</Menu.Item>
+          <Menu.Item onClick={()=>{setselectPage(1); console.log('test')}} key="2">{RenderSelectDescription[1]}</Menu.Item>
+          <Menu.Item  onClick={()=>{setselectPage(2); console.log('test')}} key="3">{RenderSelectDescription[2]}</Menu.Item>
+          <Menu.Item disabled key="10">
             Monitoramento (Em breve...)
           </Menu.Item>
         </Menu>
@@ -64,9 +67,9 @@ function Home() {
         style={{ padding: "0 50px", marginTop: 64}}
       >
         <Breadcrumb style={{ margin: "16px 0" }}>
-          <Breadcrumb.Item>{selectPage ? 'Home' : 'Sobre'}</Breadcrumb.Item>
+          <Breadcrumb.Item>{RenderSelectDescription[selectPage]}</Breadcrumb.Item>
         </Breadcrumb>
-        {selectPage ? (<HomePage></HomePage>) : (<Sobre></Sobre>)}
+        {RenderSelect[selectPage]}
         
       </Content>
       <Footer style={{ textAlign: "center" }}>
