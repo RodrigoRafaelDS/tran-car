@@ -1,5 +1,5 @@
 import  "./home.css";
-import Logo from '../imgs/Logo.jpeg'
+import Logo from './imgs/Logo.jpeg'
 function Home() {
   return (
     <div className="home">
