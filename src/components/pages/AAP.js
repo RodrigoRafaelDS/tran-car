@@ -13,7 +13,7 @@ function AAP() {
     <h2>AAP</h2>
     <h3>
     Disciplina com o objetivo geral de: "Ser capaz de criar soluções rápidas para validação de ideias e negócios tecnológicos 
-    que envolvam aplicativos, sistemas e soluções microcontroladas.""
+    que envolvam aplicativos, sistemas e soluções microcontroladas."
     </h3>
    </div>
   );
