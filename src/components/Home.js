@@ -2,7 +2,7 @@ import { Layout, Menu, Breadcrumb } from "antd";
 import "./home.css";
 import { CarOutlined,DeleteRowOutlined, FireOutlined, 
   NotificationOutlined,UnlockOutlined,ThunderboltOutlined,
-  EnvironmentOutlined, BulbOutlined } from "@ant-design/icons";
+  EnvironmentOutlined, LockOutlined, BulbOutlined } from "@ant-design/icons";
 
 const { Header, Content, Footer } = Layout;
 function Home() {
@@ -33,6 +33,7 @@ function Home() {
               <UnlockOutlined /> TranCar <CarOutlined />
             </h1>
             <h2>Tenha os dados do seu carro na palma da sua mão:</h2>
+            <h4><LockOutlined /> Trancado/Destrancado </h4>
             <h4><EnvironmentOutlined /> Localização em tempo real </h4>
             <h4><DeleteRowOutlined /> Nível do tanque</h4>
             <h4><ThunderboltOutlined /> Nível de bateria </h4>
