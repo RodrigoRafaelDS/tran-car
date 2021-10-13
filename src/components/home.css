@@ -9,16 +9,9 @@
   background: #fff;
 }
 
-.home{
-  }
+
   .text{
-    padding-left: 50%;
+    margin-left: 40%;
+    font-size: 48px;
   }
-  .img{
-    margin-left: 50%;
-  }
-  .footer{
-    margin-left: 50%;
-    position: absolute;
-    bottom:0;
-  }
+ 
