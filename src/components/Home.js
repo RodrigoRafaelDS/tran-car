@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import "./home.css";
 import { CarOutlined,DeleteRowOutlined, FireOutlined, 
   NotificationOutlined,UnlockOutlined,ThunderboltOutlined,
-  EnvironmentOutlined, LockOutlined, LinkedinOutlined, BulbOutlined } from "@ant-design/icons";
+  EnvironmentOutlined, LockOutlined, LinkedinOutlined, BulbOutlined,
+  VideoCameraOutlined } from "@ant-design/icons";
 import APP from './pages/AAP'
 const { Header, Content, Footer } = Layout;
 const HomePage=()=>{
@@ -45,18 +46,28 @@ const LogoPage=()=>{
      
   )
 }
+const VídeoPage=()=>{
+  return(
+    <div>
+    <VideoCameraOutlined />
+  </div>
+     
+  )
+}
 function Home() {
   const [selectPage, setselectPage] = useState(0);
   const RenderSelect=[<HomePage/>,<Sobre/>, <APP/>];
-  const RenderSelectDescription=['Home','Sobre','IFMG | AAP',''];
+  
+  const RenderSelectDescription=['Home','Sobre','IFMG | AAP',<VídeoPage />];
   return (
     <Layout>
       <Header style={{ position: "fixed", zIndex: 1, width: "100%" }}>
         <div className="logo" />
         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["1"]}>
-          <Menu.Item  onClick={()=>setselectPage(0)} key="1">{RenderSelectDescription[0]}</Menu.Item>
+          <Menu.Item onClick={()=>setselectPage(0)} key="1">{RenderSelectDescription[0]}</Menu.Item>
           <Menu.Item onClick={()=>{setselectPage(1); console.log('test')}} key="2">{RenderSelectDescription[1]}</Menu.Item>
-          <Menu.Item  onClick={()=>{setselectPage(2); console.log('test')}} key="3">{RenderSelectDescription[2]}</Menu.Item>
+          <Menu.Item onClick={()=>{setselectPage(2); console.log('test')}} key="3">{RenderSelectDescription[2]}</Menu.Item>
+          <Menu.Item disabled onClick={()=>{setselectPage(3); console.log('test')}} key="4">{RenderSelectDescription[3]}</Menu.Item>
           <Menu.Item disabled key="10">
             Monitoramento (Em breve...)
           </Menu.Item>
