@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import Home from './components/Home'
 import reportWebVitals from './reportWebVitals';
-
+import { ConfigProvider } from 'antd';
+import 'antd/dist/antd.css';
+import ptBR from 'antd/lib/locale/pt_BR'
 ReactDOM.render(
   <React.StrictMode>
+    <ConfigProvider locale={ptBR}>
     <Home />
+    </ConfigProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

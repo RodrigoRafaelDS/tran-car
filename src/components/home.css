@@ -1,10 +1,18 @@
+#components-layout-demo-fixed .logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.2);
+}
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
 .home{
-  background: rgb(236, 46, 46);
   }
   .text{
-    background-color: rgb(146, 233, 153);
-    padding-left: 54%;
-    color: #fff;
+    padding-left: 50%;
   }
   .img{
     margin-left: 50%;
