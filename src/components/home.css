@@ -7,9 +7,13 @@
 }
 .site-layout .site-layout-background {
   background: #fff;
+  
 }
 
-
+.footer{
+  position: absolute;
+  bottom: 0;
+}
   .text{
     margin-left: 40%;
     font-size: 48px;
