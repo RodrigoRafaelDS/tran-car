@@ -38,7 +38,7 @@ function Home() {
             <h4><EnvironmentOutlined /> Localização em tempo real </h4>
             <h4><DeleteRowOutlined /> Nível do tanque</h4>
             <h4><ThunderboltOutlined /> Nível de bateria </h4>
-            <h4><NotificationOutlined /> Ligado/desligado (alarme)</h4>
+            <h4><NotificationOutlined /> Ligado/Desligado (alarme)</h4>
             <h4><FireOutlined /> Temperatura</h4>
             <h4><BulbOutlined /> Novas funcionalidades em breve...</h4>
           </div>
@@ -46,8 +46,7 @@ function Home() {
       </Content>
       <Footer style={{ textAlign: "center" }}>
      <h3>
-        <strong> Autores: Rodrigo Rafael <a rel="noreferrer" target="_blank" href='https://www.linkedin.com/in/rodrigo-rafael/'> <LinkedinOutlined/></a>- 
-        Bruno Alves <a rel="noreferrer" target="_blank" href='https://www.linkedin.com/in/bruno-alves-3b8b82205/'> <LinkedinOutlined/></a></strong>
+        <strong>Rodrigo Rafael <a rel="noreferrer" target="_blank" href='https://www.linkedin.com/in/rodrigo-rafael/'> <LinkedinOutlined/></a>  ||  Bruno Alves <a rel="noreferrer" target="_blank" href='https://www.linkedin.com/in/bruno-alves-3b8b82205/'> <LinkedinOutlined/></a></strong>
         <p>  IFMG - Betim </p>
        </h3>  
       </Footer>
