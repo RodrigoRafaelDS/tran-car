@@ -4,7 +4,7 @@ import "./home.css";
 import { CarOutlined,DeleteRowOutlined, FireOutlined, 
   NotificationOutlined,UnlockOutlined,ThunderboltOutlined,
   EnvironmentOutlined, LockOutlined, LinkedinOutlined, BulbOutlined,
-  VideoCameraOutlined } from "@ant-design/icons";
+  VideoCameraOutlined, AlertOutlined } from "@ant-design/icons";
 import APP from './pages/AAP'
 const { Header, Content, Footer } = Layout;
 const HomePage=()=>{
@@ -22,6 +22,7 @@ const HomePage=()=>{
             <h2><ThunderboltOutlined /> Nível de bateria </h2>
             <h2><NotificationOutlined /> Ligado/Desligado (alarme)</h2>
             <h2><FireOutlined /> Temperatura</h2>
+            <h2><AlertOutlined /> Alertas personalizados</h2>
             <h2><BulbOutlined /> Novas funcionalidades em breve...</h2>
           </div>
         </div>
