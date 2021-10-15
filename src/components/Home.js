@@ -61,7 +61,7 @@ function Home() {
 
   const RenderSelect=[<HomePage/>,<Sobre/>, <APP/>,'video','contato',<Monitoramento/>];
   
-  const RenderSelectDescription=['Home','Sobre','IFMG | AAP',<VídeoPage />,'Contato','Monitoramento (Dev)'];
+  const RenderSelectDescription=['Home','Sobre','IFMG | AAP',<VídeoPage />,'Contato','Monitoramento'];
   return (
     <Layout>
       <Header style={{ position: "fixed", zIndex: 1, width: "100%" }}>
@@ -72,7 +72,7 @@ function Home() {
           <Menu.Item onClick={()=>{setselectPage(2); console.log('test')}} key="3">{RenderSelectDescription[2]}</Menu.Item>
           <Menu.Item disabled onClick={()=>{setselectPage(3); console.log('test')}} key="4">{RenderSelectDescription[3]}</Menu.Item>
           <Menu.Item disabled onClick={()=>{setselectPage(4); console.log('test')}} key="5">{RenderSelectDescription[4]}</Menu.Item>
-          <Menu.Item onClick={()=>{setselectPage(5); console.log('test')}} key="6">{RenderSelectDescription[5]}</Menu.Item>
+          <Menu.Item disabled onClick={()=>{setselectPage(5); console.log('test')}} key="6">{RenderSelectDescription[5]}</Menu.Item>
           
         </Menu>
       </Header>
