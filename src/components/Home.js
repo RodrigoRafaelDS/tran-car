@@ -61,7 +61,7 @@ function Home() {
 
   const RenderSelect=[<HomePage/>,<Sobre/>, <APP/>,'video','contato',<Monitoramento/>];
   
-  const RenderSelectDescription=['Home','Sobre','IFMG | AAP',<VídeoPage />,'Contato','Monitoramento'];
+  const RenderSelectDescription=['Home','Sobre','IFMG | AAP',<VídeoPage />,'Contato','Monitoramento (Dev)'];
   return (
     <Layout>
       <Header style={{ position: "fixed", zIndex: 1, width: "100%" }}>
