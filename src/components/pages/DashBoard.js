@@ -20,8 +20,15 @@ function DashBoard() {
           <Progress percent={30} size="small" status="active" />
         </div>
         <div>
-          <h3>Gasolina:</h3>
+          <h3>Combustível:</h3>
           <Progress percent={50} size="small" status="active" />
+        </div>
+        <div>
+          <h3>Temperatura:</h3>
+          <Progress percent={22} size="small" status="active" />
+        </div>
+        <div>
+          <h3>Localização: Betim - MG</h3>
         </div>
         <div>
           <h3>Status:</h3>
