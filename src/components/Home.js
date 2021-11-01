@@ -6,7 +6,7 @@ import { CarOutlined,DeleteRowOutlined, FireOutlined,
   EnvironmentOutlined, LockOutlined, LinkedinOutlined, BulbOutlined,
   VideoCameraOutlined, AlertOutlined } from "@ant-design/icons";
 import APP from './pages/AAP'
-import Monitoramento from './pages/Monitoramento'
+import DashBoard from './pages/DashBoard'
 const { Header, Content, Footer } = Layout;
 const HomePage=()=>{
   return(
@@ -59,7 +59,7 @@ const VídeoPage=()=>{
 function Home() {
   const [selectPage, setselectPage] = useState(0);
 
-  const RenderSelect=[<HomePage/>,<Sobre/>, <APP/>,'video','contato',<Monitoramento/>];
+  const RenderSelect=[<HomePage/>,<Sobre/>, <APP/>,'video','contato',<DashBoard/>];
   
   const RenderSelectDescription=['Home','Sobre','IFMG | AAP',<VídeoPage />,'Contato','Monitoramento'];
   return (
@@ -72,7 +72,7 @@ function Home() {
           <Menu.Item onClick={()=>{setselectPage(2); console.log('test')}} key="3">{RenderSelectDescription[2]}</Menu.Item>
           <Menu.Item disabled onClick={()=>{setselectPage(3); console.log('test')}} key="4">{RenderSelectDescription[3]}</Menu.Item>
           <Menu.Item disabled onClick={()=>{setselectPage(4); console.log('test')}} key="5">{RenderSelectDescription[4]}</Menu.Item>
-          <Menu.Item disabled onClick={()=>{setselectPage(5); console.log('test')}} key="6">{RenderSelectDescription[5]}</Menu.Item>
+          <Menu.Item onClick={()=>{setselectPage(5); console.log('test')}} key="6">{RenderSelectDescription[5]}</Menu.Item>
           
         </Menu>
       </Header>
